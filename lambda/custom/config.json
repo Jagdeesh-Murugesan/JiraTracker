@@ -2,7 +2,7 @@
   "username": "AlexaCustomSkill",
   "password": "R@mesh123456",
   "maxResults": "50",
-  "endpoint": "http://ec2-52-90-168-139.compute-1.amazonaws.com:8080/rest/api/2/search",
-  "boardUrl": "http://ec2-52-90-168-139.compute-1.amazonaws.com:8080/rest/agile/1.0/board",
-  "rootContextUrl" : "http://ec2-52-90-168-139.compute-1.amazonaws.com:8080/rest"
+  "endpoint": "http://<HostName>:8080/rest/api/2/search",
+  "boardUrl": "http://<HostName>:8080/rest/agile/1.0/board",
+  "rootContextUrl" : "http://<HostName>:8080/rest"
 }
