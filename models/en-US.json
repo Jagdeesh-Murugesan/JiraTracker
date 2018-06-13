@@ -1,0 +1,295 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "jira tracker",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "Get_Issues_Details",
+          "slots": [
+            {
+              "name": "projectName",
+              "type": "jiraProjects"
+            }
+          ],
+          "samples": [
+            "sprint status of {projectName}",
+            "What is the current sprint status of {projectName}",
+            "What is the sprint status of {projectName}",
+            "Update on current sprint status of {projectName}",
+            "Update on current sprint of {projectName}",
+            "Tell me about current sprint status of {projectName}",
+            "Tell me about current sprint of {projectName}"
+          ]
+        },
+        {
+          "name": "Get_portfolio_Details",
+          "samples": [
+            "What are the portfolios available in Jira",
+            "What are the available portfolios in Jira",
+            "What are the portfolios present in Jira"
+          ]
+        },
+        {
+          "name": "Get_Projects",
+          "slots": [
+            {
+              "name": "portfolioName",
+              "type": "portfolioName"
+            }
+          ],
+          "samples": [
+            "What are the scrums projects under {portfolioName}",
+            "What are the projects under {portfolioName}",
+            "Projects under {portfolioName}"
+          ]
+        },
+        {
+          "name": "Get_Rel_Details",
+          "slots": [
+            {
+              "name": "projectName",
+              "type": "jiraProjects"
+            }
+          ],
+          "samples": [
+            "What are the releases under {projectName}",
+            "What is the status of the project {projectName}",
+            "What is the status of the {projectName} project",
+            "What is the status of the {projectName}",
+            "Status of the project {projectName}",
+            "Status of the {projectName} project",
+            "Status of {projectName}",
+            "About {projectName}",
+            "About {projectName} project"
+          ]
+        },
+        {
+          "name": "Get_Spt_Details",
+          "slots": [
+            {
+              "name": "projectName",
+              "type": "jiraProjects"
+            }
+          ],
+          "samples": [
+            "release status of {projectName}",
+            "What is the current release status of {projectName}",
+            "What is the release status of {projectName}",
+            "Update on current release status of {projectName}",
+            "Update on current release of {projectName}",
+            "Tell me about current release status of {projectName}",
+            "Tell me about current release of {projectName}"
+          ]
+        },
+        {
+          "name": "Get_Incomplete_Details",
+          "slots": [
+            {
+              "name": "projectName",
+              "type": "jiraProjects"
+            }
+          ],
+          "samples": [
+            "what are the incomplete tasks in {projectName}",
+            "Incomplete tasks in {projectName}",
+            "Incomplete issues in {projectName}",
+            "What are the Incomplete issues in {projectName}",
+            "Incomplete user stories in {projectName}",
+            "What are the incomplete user stories of current sprint in {projectName}"
+          ]
+        },
+        {
+          "name": "Get_Developer_Details",
+          "slots": [
+            {
+              "name": "userStory",
+              "type": "userStory"
+            }
+          ],
+          "samples": [
+            "Who is working on {userStory}",
+            "Who is assigned to {userStory}",
+            "Who is the assigned developer of {userStory}"
+          ]
+        },
+        {
+          "name": "Update_Priority",
+          "slots": [
+            {
+              "name": "userStory",
+              "type": "userStory"
+            },
+            {
+              "name": "priorityLvl",
+              "type": "priorityLvl"
+            }
+          ],
+          "samples": [
+            "To set the priority of {userStory} to {priorityLvl}",
+            "To change the priority of {userStory} to {priorityLvl}",
+            "To update the priority of {userStory} to {priorityLvl}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "ACCUMS",
+                "synonyms": [
+                  "accumulators",
+                  "accums"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "ENROLLMENT"
+              }
+            },
+            {
+              "name": {
+                "value": "ALTERNATIVECONTRACTING"
+              }
+            }
+          ],
+          "name": "jiraProjects"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "CLAIMS",
+                "synonyms": [
+                  "claims"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "PROVIDER"
+              }
+            },
+            {
+              "name": {
+                "value": "GROUP",
+                "synonyms": [
+                  "group"
+                ]
+              }
+            }
+          ],
+          "name": "portfolioName"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "EN-52"
+              }
+            },
+            {
+              "name": {
+                "value": "EN 52"
+              }
+            },
+            {
+              "name": {
+                "value": "pac 35"
+              }
+            },
+            {
+              "name": {
+                "value": "pac-35"
+              }
+            },
+            {
+              "name": {
+                "value": "pac-20"
+              }
+            },
+            {
+              "name": {
+                "value": "pac 20"
+              }
+            },
+            {
+              "name": {
+                "value": "pac 25"
+              }
+            },
+            {
+              "name": {
+                "value": "Pac-25"
+              }
+            },
+            {
+              "name": {
+                "value": "Pac-30"
+              }
+            },
+            {
+              "name": {
+                "value": "pac 30"
+              }
+            },
+            {
+              "name": {
+                "value": "Pac 40"
+              }
+            },
+            {
+              "name": {
+                "value": "PAC-40"
+              }
+            }
+          ],
+          "name": "userStory"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Lowest"
+              }
+            },
+            {
+              "name": {
+                "value": "Low"
+              }
+            },
+            {
+              "name": {
+                "value": "Highest"
+              }
+            },
+            {
+              "name": {
+                "value": "High"
+              }
+            },
+            {
+              "name": {
+                "value": "Medium"
+              }
+            }
+          ],
+          "name": "priorityLvl"
+        }
+      ]
+    }
+  }
+}

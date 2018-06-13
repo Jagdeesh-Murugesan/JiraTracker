@@ -1,0 +1,26 @@
+{
+  "deploy_settings": {
+    "Ramesh": {
+      "skill_id": "amzn1.ask.skill.dab53072-cf43-491e-9510-4e10f1fdfa6a",
+      "was_cloned": true,
+      "merge": {
+        "manifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "arn:aws:lambda:us-east-1:649478973809:function:JiraTracker"
+              },
+              "regions": {
+                "NA": {
+                  "endpoint": {
+                    "uri": "arn:aws:lambda:us-east-1:649478973809:function:JiraTracker"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

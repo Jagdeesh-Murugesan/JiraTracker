@@ -1,0 +1,21 @@
+Please find below the finalized utterances
+ 
+What are the in progress scrums projects under Group Portfolio?
+Answer: Under Group Portfolio we have ASO QUOTING, RENEWALS, ENROLLMENT scrums.
+ 
+What is the status of the sprint under Renewals?
+Answer: Renewals sprint is in Green zone. 9 user stories are completed and 1 is in progress.
+ 
+What is the status of the sprint under ASO QUOTING?
+Answer: ASO QUOTING sprint is in Red zone. 3 user stories are completed and 7 are in progress.
+ 
+What is the status of the sprint under ENROLLMENT?
+Answer: ENROLLMENT sprint is in Green zone. 8 user stories are completed and 2 are in progress.
+
+
+http://ec2-34-226-215-151.compute-1.amazonaws.com:8080/rest/api/2/project
+http://ec2-34-226-215-151.compute-1.amazonaws.com:8080/rest/agile/1.0/board
+http://ec2-34-226-215-151.compute-1.amazonaws.com:8080/rest/agile/1.0/board/3/sprint/5/issue
+http://ec2-34-226-215-151.compute-1.amazonaws.com:8080/rest/api/2/search?jql=key=REN-11&fields=project,issuetype,status
+http://ec2-34-226-215-151.compute-1.amazonaws.com:8080/rest/api/2/search?maxResults=100&fields=project,issuetype,status
+http://ec2-35-153-53-185.compute-1.amazonaws.com:8080/rest/api/2/search?jql=project[key]=AQ&fields=issuetype,status,customfield_10004
